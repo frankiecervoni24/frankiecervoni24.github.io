@@ -1,0 +1,144 @@
+/* Frankie Cervoni Period 4 MS. Chang*/
+/*
+#140202
+#400101
+#8A0000
+#BE0C0C
+#E20808
+*/
+
+
+body {
+	font-size: 1em;
+	font-weight: normal;
+	font-family: Arial, Sans-serif;
+	color: black;
+	text-align: left;
+	background-color: yellow;
+	padding: 20px;
+	margin: 15px;
+	color: black;
+	border: 5px solid blue;
+	width: 70px;
+	min-width:720px;
+	background-image: url(https://dailypost.files.wordpress.com/2015/04/turnpike-blur.jpg)
+
+
+}
+h1 {
+	font-size: 1.8em;
+	font-weight: bold;
+	color: blue;
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+	color: green;
+	background-color: yellow;
+	border: 10px solid blue;
+}
+
+
+}
+h2 {
+	font-size:1.4em; 
+	font-weight:normal;
+	font-family:Arial, Sans-serif;
+	color:#24e2b9;
+	text-align:center;
+	padding: 10px;
+	margin: 10px;
+	color: red;
+	background-color: blue;
+	border: 5px solid blue;
+
+
+}
+div {
+	font-size:1em;
+	font-weight:normal;
+	font-family:Arial, Sans-serif;
+	color:#ff2121;
+	text-align:left;
+	padding: 15px;
+	margin-left: 20px;
+	color: blue;
+	background-color: pink;
+	border: 1px solid blue;
+	
+
+}
+
+p {
+	font-size:1em;
+	font-weight:normal;
+	font-family:Arial, Sans-serif;
+	color:#FFFFFF;
+	padding: 25px;
+	margin: 1em;  
+	color: black;
+	background-color: red;
+	border: 10px solid blue;
+
+}
+
+table{
+	margin: 0auto: /;
+	background-color: black;
+
+}
+
+th{
+
+
+}
+
+td{
+
+
+}
+
+caption{
+	font-weight: bold;
+
+
+	
+}
+
+nav {
+	clear: left;
+
+}
+
+nav ul li {
+	float: left;
+	padding: 1em 1em;
+	list-style-type: none;
+	background-color: #F5F6F6;
+	border: 2px solid black;
+}
+
+nav a{
+	text-decoration: none;
+}
+
+#main {
+	clear: left;
+}
+  button { 
+    font-size: 1.1em;
+    background-color: #EBF5FF;
+    color: #4312AE;
+    border: 2px solid black;
+    box-shadow: 4px 4px 4px #999999;
+  }
+  button:hover, button:focus, button:active { 
+   
+    color: #EBF5FF;
+    background-color: #4312AE;
+    cursor: pointer; 
+  }
+
+    div#clock { 
+     
+    }
+ 
