@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf=8">
+ <title> Web Portfolio: Javascript Page</title>
+  <script>
+  	function showAlert() { 
+  	var myText = "I love Jarett!";
+    alert ("Hello world!");
+       alert (myText);
+
+  }
+    function updateTime() { 
+        // add leading zero's to minutes and seconds
+  if (minutes < 10) { 
+    minutes = '0' + minutes;
+  }
+  if (seconds < 10) { 
+    seconds = '0' + seconds;
+  }       
+
+  
+  if (hours >= 12 && hours < 24) { 
+    var timeOfDay = 'pm';
+  }
+  else { 
+    var timeOfDay = 'am'; 
+  }
+        
+ 
+  if (hours > 12) { 
+    hours = hours - 12;
+  }
+
+    var now = new Date();
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
+
+   
+    var currentTime = hours + ':' + minutes + ':' + seconds + '  ' + timeOfDay;   
+  
+    var myClock = document.getElementById('clock');
+    
+
+    myClock.innerHTML = currentTime;
+  } 
+  </script>s
+
+
+</head>
+<html>
+ <head>
+ 	<link type="text/css" rel="stylesheet" href="_assets/css//mystyle.css" media="screen">
+ 	<link rel="shortcut icon" href="_assets/images/favicon.png"> 
+ <meta charset="utf=8">
+ <title> Web Portfolio: Frankie Cervoni</title>
+</head>
+<body>
+<div>
+ <a href="#main">Skip to main content</a>
+ <img src="_assets/images/banner.png" style="border:none" 
+         alt="banner" /> 
+</div> 
+
+
+
+
+<body onload="setInterval('updateTime()',1000)">
+
+
+
+"> >
+	<button onclick="showAlert()">Show alert</button>
+
+	<div id="clock">
+
+	</div>
+
+</body>
+</hmtl>	
+<html>
+ <head>
+ <meta charset="utf=8">
+ <title> Web Portfolio: Graphics Page</title>
+<link type="text/css" rel="stylesheet" href="_assets/css//mystyle.css" media="screen">
+<link rel="shortcut icon" href="_assets/images/favicon.png"> 
+
+</head>
+<h1>Web Portfolio</h1>
+>
+	<nav>
+		<ul>
+			<li> <a href="home.html">Home</a></li>
+			<lI> <a href="accessability.html">Accessability</a></li>
+			<lI> <a href="usability.html">Usability</a></li>
+			<lI> <a href="graphics.html">Graphics</a/></li>
+			<li> <a href="javascript.html">Javascript</a></li>
+			<li> <a href="tools.html">Tools</a></li>
+			<lI> <a href="videos.html">Videos</a></li>
+		</ul>
+	</nav>
+  <div class="post-content section-inner">
+      <section class="main-content">
+                <form class="cart" id="cart-hplus">
+                <div class="item">
+                    <h2> Soccer Cleats </h2>
+                    <p>For a better performance on the pitch.</p>
+        
+                    <div class="info">
+                    <span>Price: $75/pair</span>
+                    </div>
+        
+                    <div class="order">
+                    <label for="txt-q-bball">Quantity desired:</label>
+                    <input type="number" min="0" id="txt-q-bball" size="3" placeholder="0">
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <h2>Cones and Stepping Ladder</h2>
+                    <p> To improve your speed and footwork</p>
+        
+                    <div class="info">
+                    <span>Price: $15/each</span>
+                    </div>
+        
+                    <div class="order">
+                    <label for="txt-q-jersey">Quantity desired:</label>
+                    <input type="number" min="0" id="txt-q-jersey" size="3" placeholder="0">
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <h2> Warm up shorts and jerseys</h2>
+                    <p> Comfortable for all athletes </p>
+        
+                    <div class="info">
+                    <span>Price: $10/each</span>
+                    </div>
+        
+                    <div class="order">
+                    <label for="txt-q-power">Quantity desired:</label>
+                    <input type="number" min="0" id="txt-q-power" size="3" placeholder="0">
+                    </div>
+                </div>
+    
+               
+    
+                <div id="summary">
+                    <h2>Estimate Order</h2>
+                    
+                    <div class="group state">
+                        <label for="s-state">State* (required):</label>
+                        <select id="s-state" required>
+                            <option value="">- select -</option>
+                            <option value="NV">Nevada</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="CA">California</option>
+                            <option value="OR">Oregon</option>
+                            <option value="CO">Colorado</option>
+                        </select>
+                    </div>
+        
+                    <div class="group method">
+                        <label for="r-method-pickup">Shipping and Handling:</label><br>
+                        <input type="radio" value="pickup" name="r_method" id="r-method-pickup" checked> <label for="r-method-pickup">Pickup (free)</label><br>
+            
+                        <input type="radio" value="usps" name="r_method" id="r-method-usps"> <label for="r-method-usps">US Mail ($2/item)</label><br>
+            
+                        <input type="radio" value="ups" name="r_method" id="r-method-ups"> <label for="r-method-ups">UPS ($3/item)</label>
+                    </div>
+        
+            
+        
+                    <div class="group calc">
+                        <p>
+                        <label for="btn-estimate">Click to estimate:</label><br>
+                        <input type="submit" value="Estimate Total" id="btn-estimate">
+                        <input type="text" id="txt-estimate" placeholder="$0.00">
+                        </p>
+            
+                        <div id="results"></div>
+                    </div>
+                </div>
+        
+                </form>
+      </section>
+      <div class="clear"></div>
+    </div>
+  </div>
+
+<div class="first name">
+            <label for="txt-name">First Name</label><br>
+                        
+            <textarea name="txt-name" id="txt-name" rows="1" placeholder=""></textarea>
+        </div>
+        <div class="last name">
+            <label for="txt-name">Last Name</label><br>
+                        
+            <textarea name="txt-name" id="txt-name" rows="1" placeholder=""></textarea>
+        </div>
+        <div class="group size"
+            <label for="s-size">Size</label>
+            <br></br>
+
+            <select id="s-size">
+                <option value="">- Select -</option>
+                <option value="XS">X Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+                <option value="XL">X Large</option>
+            </select>
+        </div>
+        <div class="groupsmethod">
+            <label for="r-method-pickup">Shipping and Handling</label>
+            <br></br>
+
+            <input type="radio" value="pickup" name="r_method" id="r-method-pickup" checked> 
+            <label for="r-method-pickup">Standard $5 (3-6 business days)</label>
+            <br></br>
+
+            <input type="radio" value="ups" name="r_method" id="r-method-ups" checked> 
+            <label for="r-method-ups">Express $10 (2-4 business days)</label>
+            <br></br>
+
+            <input type="radio" value="usps" name="r_method" id="r-method-usps" checked> 
+            <label for="r-method-usps">Overnight (1 business day)</label>
+            <br></br>
+        </div>  
